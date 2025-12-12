@@ -11,6 +11,16 @@ ZIP_URL = f"https://github.com/{GITHUB_USER}/{GITHUB_REPO}/archive/refs/heads/{B
 st.title("Loading Dashboard…")
 st.info("Fetching the full application from GitHub. Please wait...")
 
+# Debug: Show extracted directory structure
+st.write("Extracted directory tree:")
+for root, dirs, files in os.walk(tmp_dir):
+    level = root.replace(tmp_dir, '').count(os.sep)
+    if level < 2:  # display only top-level and one sublevel
+        st.write(f"{root} -> dirs: {dirs}, files: {files}")
+
+
+
+
 # Step 1: Download the zip file
 try:
     r = requests.get(ZIP_URL, timeout=60)
