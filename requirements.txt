@@ -3,3 +3,11 @@ pandas
 openpyxl
 numpy
 matplotlib
+.gitignore
+__pycache__/
+.env
+.vscode/
+*.pyc
+.DS_Store
+data/*.xlsx
+*.xlsx
