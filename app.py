@@ -2,17 +2,16 @@ import streamlit as st
 
 st.set_page_config(page_title="Nutrition Dashboard", layout="wide")
 
-st.title("Nutrition & Complementary Feeding Dashboard – Project Menu")
+st.title("Degema & Port Harcourt Nutrition & Complementary Feeding Dashboard")
 
 st.write("""
-Welcome to the project MEAL analytics and documentation hub.
+Welcome to the Nutrition & Complementary Feeding Dashboard.
 
-Use the left navigation panel to explore:
-- **Home** (Full analytics dashboard with filters & MEAL tabs)
-- **Overview**
-- **Executive Summary**
-- **Methodology**
-- **Dashboard Documentation**
+Use the left sidebar to navigate:
+- Overview  
+- Executive Summary  
+- Methodology  
+- Dashboard Documentation  
+
+And use the filters on the left to explore the interactive indicators.
 """)
-
-st.info("Select a page from the left sidebar to begin.")
